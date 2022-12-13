@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--  projekt do kurzu  -->
+<html lang="cs-cz">
+    <head>
+        <meta charset="utf-8" />
+        <title>Projekt pro kurz</title>
+     
+        <link rel="stylesheet" href="projekt.css">
+        <link rel="stylesheet" href="bootstrap.css"> 
+     <!--         -->
+   
+
+    </head>
+
+    <body class="container">       
+        <header>
+            <div id="logo">
+                <img src="LogoPojistovny.png" alt="Logo pojistovny" width="200" >
+            </div>     
+            <nav>
+                <ul>
+                    <li class="aktivni"><a href="Projekt.html">Domů</a></li>
+                    <li><a href="Projekt.html">Pojištěnci</a></li>
+                    <li><a href="Projekt.html">O aplikaci...</a></li> 
+                </ul>
+            </nav>           
+        </header>
+       
+        <h1>Pojištěnci</h1>
+        <section id="tabulkaPojistencu"> </section>
+
+        <h1>Nový pojištěnec</h1>
+
+        <form>
+            <div class="form-row">
+                <div class="form-group col-6">
+                    <label for="jmeno">Jméno</label>
+                    <input type="text" class="form-control" placeholder="Vyplňte jméno" id="jmeno">
+                </div>
+                <div class="form-group col">
+                    <label for="prijmeni">Příjmení</label>
+                    <input type="text" class="form-control" placeholder="Vyplňte příjmení" id="prijmeni">
+                </div>
+            </div>   
+            <div class="form-row">
+                <div class="form-group col-6">
+                    <label for="vek">Věk</label>
+                    <input type="number" class="form-control" placeholder="Vyplňte věk" id="vek">
+                </div>
+                <div class="form-group col">
+                    <label for="telefon">Telefon</label>
+                    <input type="text" class="form-control" placeholder="Vyplňte telefon" id="telefon">
+                </div>
+            </div>  
+        </form>
+        <div class = "uprostred" >   
+            <button id="tlacitkoUlozit" (onclick) = "nastavUdalosti()" class="tlacitko">Uložit</button>    
+        </div>
+ 
+        <script src="Projekt.js"></script>
+        <script type="text/javascript"> </script> 
+        
+    </body>
+</html>
+
+
+    
+
